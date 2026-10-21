@@ -34,6 +34,8 @@ jobs:
         run: echo 'kccyongin.hoopnote.kr' > dist/CNAME
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -46,6 +48,8 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
+
+
 
 
 
