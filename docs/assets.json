@@ -1,0 +1,82 @@
+{
+  "images": [
+    {
+      "file": "assets/images/kcc-logo.png",
+      "alt": "",
+      "bytes": 35230
+    },
+    {
+      "file": "assets/images/hero-poster.webp",
+      "alt": "",
+      "bytes": 31180
+    },
+    {
+      "file": "assets/images/program-open.webp",
+      "alt": "공을 드리블하며 코트를 달리는 아이",
+      "bytes": 79044
+    },
+    {
+      "file": "assets/images/program-team.webp",
+      "alt": "경기 중 나란히 서 있는 KCC 유니폼의 아이들",
+      "bytes": 123626
+    },
+    {
+      "file": "assets/images/program-representative.webp",
+      "alt": "경기 중 슛을 시도하는 아이",
+      "bytes": 101734
+    },
+    {
+      "file": "assets/images/program-training.webp",
+      "alt": "공을 잡고 공격하는 농구 선수",
+      "bytes": 82134
+    },
+    {
+      "file": "assets/images/program-private.webp",
+      "alt": "실내 코트에서 슛을 연습하는 아이",
+      "bytes": 131526
+    },
+    {
+      "file": "assets/images/team-together.webp",
+      "alt": "KCC 코트에서 함께 모인 아이들의 단체사진",
+      "bytes": 379294
+    },
+    {
+      "file": "assets/images/game-action.webp",
+      "alt": "농구 경기에서 드리블하며 수비를 돌파하는 아이",
+      "bytes": 96924
+    },
+    {
+      "file": "assets/images/team-huddle.webp",
+      "alt": "코치와 아이들이 경기 중 함께 모여 이야기를 나누는 모습",
+      "bytes": 163808
+    },
+    {
+      "file": "assets/images/yongin-court.webp",
+      "alt": "KCC 이지스 주니어 용인점의 원목 바닥 실내 농구 코트",
+      "bytes": 285970
+    },
+    {
+      "file": "assets/images/timetable-original.jpg",
+      "alt": "기존 HTML에 내장된 공식 시간표 원본. 아래 텍스트 표와 대조할 수 있습니다.",
+      "bytes": 184292
+    }
+  ],
+  "video": {
+    "file": "assets/videos/hero-coaching.mp4",
+    "source": "../images/pic/reel.mp4",
+    "note": "원본 영상 전체 길이와 AAC 음성 유지. 첫 재생은 음소거, 상단 소리 버튼으로 활성화."
+  },
+  "standaloneSourceSha256": "3f0261a9dda6bc6c0abc3301b91567656bfb4e23f0e427746ec737adc92bfbcf",
+  "fonts": {
+    "korean": "Pretendard Variable 1.3.9, 본문 500 / 제목 600 이상",
+    "english": "Barlow Condensed Bold",
+    "pretendardSource": "https://github.com/orioncactus/pretendard/tree/v1.3.9"
+  },
+  "icons": [
+    {
+      "file": "assets/icons/naver-blog.png",
+      "source": "https://ssl.pstatic.net/static/blog/icon/blog_Icon_192x192.png",
+      "note": "네이버 블로그 공식 페이지에서 참조하는 192px 아이콘"
+    }
+  ]
+}

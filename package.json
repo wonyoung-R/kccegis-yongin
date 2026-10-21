@@ -1,0 +1,12 @@
+{
+  "name": "kcc-egis-junior-yongin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KCC 이지스 주니어 용인점 홈페이지",
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "check": "node --check js/main.js && node scripts/check.mjs",
+    "build": "npm run check && node scripts/build.mjs",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  }
+}

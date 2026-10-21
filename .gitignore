@@ -1,0 +1,6 @@
+.DS_Store
+.gstack/
+dist/
+node_modules/
+*.log
+__pycache__/

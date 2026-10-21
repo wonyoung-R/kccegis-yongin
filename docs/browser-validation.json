@@ -1,0 +1,150 @@
+{
+  "widths": {
+    "360": {
+      "overflow": false,
+      "clippedTitles": 0,
+      "images": 12,
+      "externalLinks": 0,
+      "smallTouchTargets": 0,
+      "menuEscapeAndNavigation": true,
+      "keyboardPanels": true,
+      "controls": [
+        {
+          "label": "영상 일시정지",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 166.1875,
+          "y": 88,
+          "width": 86,
+          "height": 44
+        },
+        {
+          "label": "소리 켜기",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 269.921875,
+          "y": 88,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    },
+    "390": {
+      "overflow": false,
+      "clippedTitles": 0,
+      "images": 12,
+      "externalLinks": 0,
+      "smallTouchTargets": 0,
+      "menuEscapeAndNavigation": true,
+      "keyboardPanels": true,
+      "controls": [
+        {
+          "label": "영상 일시정지",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 196.1875,
+          "y": 88,
+          "width": 86,
+          "height": 44
+        },
+        {
+          "label": "소리 켜기",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 299.921875,
+          "y": 88,
+          "width": 68,
+          "height": 44
+        }
+      ]
+    },
+    "768": {
+      "overflow": false,
+      "clippedTitles": 0,
+      "images": 12,
+      "externalLinks": 0,
+      "smallTouchTargets": 0,
+      "menuEscapeAndNavigation": true,
+      "keyboardPanels": true,
+      "controls": [
+        {
+          "label": "영상 일시정지",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 552.6875,
+          "y": 110,
+          "width": 91,
+          "height": 44
+        },
+        {
+          "label": "소리 켜기",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 663.84375,
+          "y": 110,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    },
+    "1440": {
+      "overflow": false,
+      "clippedTitles": 0,
+      "images": 12,
+      "externalLinks": 0,
+      "smallTouchTargets": 0,
+      "menuEscapeAndNavigation": true,
+      "keyboardPanels": true,
+      "controls": [
+        {
+          "label": "영상 일시정지",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 1196.46875,
+          "y": 110,
+          "width": 91,
+          "height": 44
+        },
+        {
+          "label": "소리 켜기",
+          "background": "rgba(0, 0, 0, 0)",
+          "x": 1307.625,
+          "y": 110,
+          "width": 72,
+          "height": 44
+        }
+      ]
+    }
+  },
+  "video": {
+    "initial": {
+      "muted": true,
+      "paused": false
+    },
+    "soundOn": {
+      "muted": false,
+      "paused": false,
+      "audioBytes": 17735,
+      "time": 2.525968,
+      "label": "소리 끄기"
+    },
+    "pauseResumeAndMute": true
+  },
+  "font": {
+    "family": "Pretendard, -apple-system, \"system-ui\", \"Apple SD Gothic Neo\", \"Malgun Gothic\", Arial, sans-serif",
+    "weight": "500",
+    "headingWeight": "600",
+    "loaded": true
+  },
+  "fees": {
+    "types": 4,
+    "rows": 11,
+    "exactMatch": true,
+    "textSelectable": true
+  },
+  "reducedMotion": {
+    "paused": true,
+    "sticky": "relative",
+    "hiddenCopy": 0
+  },
+  "consoleErrors": "--- BEGIN UNTRUSTED EXTERNAL CONTENT (source: http://127.0.0.1:5173/) ---\n(no console errors)\n--- END UNTRUSTED EXTERNAL CONTENT ---",
+  "visibilityRegression": {
+    "passed": 8,
+    "status": "fixed and verified by state-transition tests"
+  },
+  "outsideResourceRequests": [],
+  "buildPreview": "http://127.0.0.1:4173"
+}
