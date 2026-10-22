@@ -697,6 +697,10 @@ summary:focus-visible,
   transform: scale(1.025);
   filter: brightness(0.9);
 }
+.program-panel[data-program="2"] img {
+  object-position: center;
+  transform: none;
+}
 .program-panel:after {
   content: "";
   position: absolute;
