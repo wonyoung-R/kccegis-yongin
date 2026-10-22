@@ -40,7 +40,7 @@ npm run preview
 
 `dist/`는 소스에서 복사한 결과입니다. 수정은 루트의 원본 파일에서 하고 다시 빌드합니다. 빌드 명령은 기존 파일을 삭제하지 않으므로, 이후 소스에서 파일명을 바꾼 경우 배포 폴더의 오래된 파일도 함께 확인하세요.
 
-공유 URL은 호스팅에 게시한 뒤 생깁니다. 현재 프로젝트에는 특정 호스팅 계정·도메인을 연결하지 않았습니다.
+공개 주소는 https://kccyongin.hoopnote.kr/ 입니다. GitHub Pages를 사용하며, `main` 브랜치에 푸시하면 기존 `.github/workflows/deploy.yml`이 빌드와 배포를 실행합니다.
 
 ## 현재 안내에서 확인이 필요한 사항
 
@@ -61,3 +61,5 @@ npm run preview
 실제 화면과 검증 결과는 [docs/validation.md](docs/validation.md)에 정리했습니다.
 
 하단 SNS 로고는 인스타그램 `kccegis_junior_yongin`, 네이버 블로그 `kcc_junior_yongin`으로 연결됩니다. 오시는 길에는 센터 주소와 네이버 지도 검색 링크를 표시합니다. 요청된 외부 링크 3개는 새 창으로 열립니다. 링크를 변경할 때는 `index.html`과 `scripts/check.mjs`의 허용 주소를 함께 변경하세요.
+
+SNS 링크 공유 이미지는 `assets/images/kcc-share-logo.png`입니다. 제공된 KCC 벡터 로고 원본을 흰 배경의 1200×630 PNG로 렌더링했습니다. `index.html`의 Open Graph·Twitter 메타데이터가 이 이미지를 절대 URL로 참조하며, `npm run check`에서 파일·도메인·크기를 검사합니다. 도메인이 바뀌면 `og:url`, `og:image`, `twitter:image`를 함께 수정하세요.

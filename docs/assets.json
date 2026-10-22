@@ -78,5 +78,13 @@
       "source": "https://ssl.pstatic.net/static/blog/icon/blog_Icon_192x192.png",
       "note": "네이버 블로그 공식 페이지에서 참조하는 192px 아이콘"
     }
-  ]
+  ],
+  "socialImage": {
+    "file": "assets/images/kcc-share-logo.png",
+    "source": "../images/logos/kcc로고.ai",
+    "width": 1200,
+    "height": 630,
+    "note": "공식 벡터 로고를 흰 배경 중앙에 렌더링한 SNS 공유 이미지",
+    "publicUrl": "https://kccyongin.hoopnote.kr/assets/images/kcc-share-logo.png"
+  }
 }

@@ -37,6 +37,49 @@ for (const match of css.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g)) {
   await checkResource(match[1], path.join(root, "css"));
 }
 
+const metadata = new Map(
+  [
+    ...html.matchAll(
+      /<meta\b[^>]*(?:property|name)="([^"]+)"[^>]*content="([^"]*)"[^>]*>/g,
+    ),
+  ].map((match) => [match[1], match[2]]),
+);
+const siteUrl = new URL(metadata.get("og:url"));
+const shareImageUrl = new URL(metadata.get("og:image"));
+assert.equal(
+  shareImageUrl.protocol,
+  "https:",
+  "SNS 이미지는 HTTPS 절대 주소여야 합니다.",
+);
+assert.equal(
+  shareImageUrl.origin,
+  siteUrl.origin,
+  "SNS 이미지와 홈페이지 도메인이 다릅니다.",
+);
+assert.equal(
+  metadata.get("twitter:image"),
+  shareImageUrl.href,
+  "SNS 공유 이미지가 일치하지 않습니다.",
+);
+const shareImagePath = decodeURIComponent(shareImageUrl.pathname).slice(1);
+await checkResource(shareImagePath, root);
+const shareImage = await readFile(path.join(root, shareImagePath));
+assert.equal(
+  shareImage.subarray(0, 8).toString("hex"),
+  "89504e470d0a1a0a",
+  "SNS 이미지가 PNG가 아닙니다.",
+);
+assert.equal(
+  shareImage.readUInt32BE(16),
+  Number(metadata.get("og:image:width")),
+  "SNS 이미지 너비가 메타데이터와 다릅니다.",
+);
+assert.equal(
+  shareImage.readUInt32BE(20),
+  Number(metadata.get("og:image:height")),
+  "SNS 이미지 높이가 메타데이터와 다릅니다.",
+);
+
 const allowedExternalLinks = new Set([
   "https://www.instagram.com/kccegis_junior_yongin/",
   "https://blog.naver.com/kcc_junior_yongin",
