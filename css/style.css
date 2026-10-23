@@ -483,10 +483,18 @@ summary:focus-visible,
   gap: 24px;
   margin-bottom: 20px;
 }
-.hero-lead h2 {
+.hero-lead h1 {
   font-size: clamp(21px, 2.3vw, 34px);
   font-weight: 600;
   letter-spacing: -0.05em;
+}
+.hero-brand {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 .hero-title {
   font-size: clamp(80px, 15.4vw, 250px);
@@ -580,10 +588,33 @@ summary:focus-visible,
   filter: blur(30px);
 }
 .intro {
+  --line: rgba(255, 255, 255, 0.24);
+  --muted: #eef0f2;
   position: relative;
+  isolation: isolate;
+  background: var(--ink);
+  color: var(--white);
   padding-top: 100px;
   padding-bottom: 130px;
   margin-top: -1px;
+}
+.intro-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.intro-media img {
+  width: 100%;
+  height: 100%;
+  object-position: 50% 62%;
+}
+.intro-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.7));
 }
 .intro-layout {
   display: grid;
@@ -608,7 +639,7 @@ summary:focus-visible,
 }
 .intro h2 em {
   font-style: normal;
-  color: #ab572a;
+  color: #ffae78;
 }
 .intro-copy {
   display: grid;
@@ -1417,7 +1448,7 @@ summary:focus-visible,
   .hero-content {
     bottom: 35px;
   }
-  .hero-lead h2 {
+  .hero-lead h1 {
     font-size: 24px;
   }
   .hero-lead .btn {
@@ -1752,7 +1783,7 @@ summary:focus-visible,
     display: block;
     margin-bottom: 18px;
   }
-  .hero-lead h2 {
+  .hero-lead h1 {
     font-size: 23px;
     letter-spacing: -0.045em;
   }
@@ -2241,6 +2272,7 @@ summary:focus-visible,
   .programs,
   .moments,
   .contact-statement,
+  .intro-media,
   .progress {
     display: none !important;
   }
@@ -2289,6 +2321,15 @@ summary:focus-visible,
   .footer {
     background: white;
     color: black;
+  }
+  .intro {
+    --line: #aaa;
+    --muted: #444;
+    background: white;
+    color: black;
+  }
+  .intro h2 em {
+    color: #ab572a;
   }
   .reveal {
     transform: none !important;
